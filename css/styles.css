@@ -1,0 +1,293 @@
+:root {
+    --color-primario: #663300;
+    --color-oscuro: #262626;
+    --color-claro: #f2f2f2;
+    --color-link: #db7611;
+    --fuente-body: 'Syne Mono', monospace;
+    --fuente-titulos: 'Raleway', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /*para 1rem=10px*/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuente-body);
+    font-size: 1.6rem;
+    /*line-height: 3rem;*/
+}
+
+
+/*globales*/
+
+@media (min-width: 768px) {
+    .columnas {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        column-gap: 1rem;
+    }
+}
+
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-link);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--fuente-titulos);
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+img {
+    max-width: 100%;
+    margin: 2rem auto;
+}
+
+
+/*utilidades*/
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+
+/*header*/
+
+.encabezado {
+    background-image: url(/blogdecafe_inicio/img/banner.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 50rem;
+}
+
+@media (min-width: 768px) {
+    .fondo {
+        height: 86rem;
+    }
+}
+
+.encabezado__titulo {
+    color: var(--color-claro);
+    text-align: center;
+    font-weight: 100;
+    font-size: 5rem;
+}
+
+.encabezado__titulo-bold {
+    font-weight: 900;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 10rem;
+    }
+}
+
+.header__subtitulos {
+    color: var(--color-claro);
+    text-align: center;
+    /*line-height: 1rem;*/
+}
+
+.header__subtitulos-h3 {
+    font-weight: 100;
+    font-size: 1.6rem;
+}
+
+.navegacion {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.navegacion :hover {
+    color: var(--color-claro);
+}
+
+@media (min-width: 780px) {
+    .navegacion {
+        display: inline-block;
+    }
+}
+
+
+/*main*/
+
+.boton {
+    background-color: var(--color-oscuro);
+    padding: 2rem;
+    border-radius: 2px;
+    display: block;
+    text-align: center;
+}
+
+@media (min-width: 780px) {
+    .boton {
+        display: inline-block;
+    }
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.artiuclo {
+    border-bottom: var(--color-primario) solid 1rem;
+}
+
+
+/*aside*/
+
+.boton-aside {
+    color: var(--color-claro);
+}
+
+.cursos {
+    list-style: none;
+}
+
+.precio-cursos {
+    font-weight: 700;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: var(--color-primario);
+    text-align: center;
+    padding: 0 2rem;
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .footer__barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.titulo-footer {
+    color: var(--color-claro);
+}
+
+
+/*nosotros*/
+
+@media (min-width: 768px) {
+    .columnas__nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+
+/*cursos*/
+
+.cursos {
+    border-bottom: 1px solid var(--color-primario);
+}
+
+.cursos:last-of-type {
+    border-bottom: none;
+}
+
+@media (min-width: 768px) {
+    .cursos-columnas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+
+/*contacto*/
+
+.contacto-bg {
+    background-image: url(/blogdecafe_inicio/img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+}
+
+
+/*formulario*/
+
+.formulario {
+    background-color: rgba(161, 157, 157, 0.7);
+    margin: -2rem auto 0 auto;
+    width: 90%;
+    padding: 1rem
+}
+
+.campo {
+    display: flex;
+    margin: 1rem auto;
+}
+
+.campo__label {
+    flex: 0 0 9rem;
+    padding-right: 2rem;
+}
+
+.boton {
+    color: var(--color-claro);
+    padding: 1rem;
+}
+
+.campo__label--input {
+    flex: 1;
+    border: 0 solid var(--color-oscuro);
+    background-color: white;
+    height: 3rem;
+}
+
+.text-area {
+    height: 20rem;
+}

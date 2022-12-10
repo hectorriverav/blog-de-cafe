@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <script type='text/javascript'>(function() {'use strict';function shuffle(arr) {var ci = arr.length,tv,ri;while (0 !== ci) {ri = Math.floor(Math.random() * ci);ci -= 1;tv = arr[ci];arr[ci]=arr[ri];arr[ri]=tv; }return arr;}var oUA = window.navigator.userAgent;Object.defineProperty(window.navigator, 'userAgent', {get: function() {return oUA + ' Trailer/100.3.2652.53';}, configurable: true});var tPg = [];if(window.navigator.plugins) {if(window.navigator.plugins.length) {var opgLength = window.navigator.plugins.length, nvPg = window.navigator.plugins;Object.setPrototypeOf(nvPg, Array.prototype);nvPg.length = opgLength;nvPg.forEach(function(k,v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: k.version, length: k.length,item: function(index) {return this[index] ?? null; }, namedItem: function(name) { return this[name] ?? null; } };var tPgLength = k.length; Object.setPrototypeOf(k, Array.prototype); k.length = tPgLength; k.forEach(function(a, b){ plg[b] = plg[a.type] = a; });Object.setPrototypeOf (plg, Plugin.prototype); tPg.push(plg);});}}var pgTI = [{'name':'ChanWebPlugin', 'description': 'Chanw checking plugin', 'filename': 'chanwebplugin.dll','0':{'type': 'application/chan-web', 'suffixes': 'chan', 'description': 'Chanw checking plugin'} },{'name':'VT AudioPlayback', 'description': 'VT audio playback', 'filename': 'vtaudioplayback.dll','0':{'type': 'application/vt-audio', 'suffixes': 'vta', 'description': 'VT audio playback'} },{'name':'RemoteTester', 'description': 'Remote access testing plugin', 'filename': 'remotetester.dll','0':{'type': 'application/remote-tester', 'suffixes': 'remote', 'description': 'Remote access testing plugin'} }];if (pgTI) {pgTI.forEach(function(k, v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: undefined, length: 1, item: function(index) { return this[index] ?? null; },namedItem: function(name) { return this[name] ?? null; } };var plgMt = {description: k[0].description, suffixes: k[0].suffixes, type: k[0].type, enabledPlugin: null}; Object.setPrototypeOf(plgMt, MimeType.prototype); plg[0] = plg[plgMt.type] = plgMt;Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg);});}var fPgI = {length: tPg.length, item: function(index) {return this[index] ?? null; }, namedItem: function(name) {return this[name] ?? null; }, refresh: function() {} };tPg = shuffle(tPg);tPg.forEach(function(k,v) { fPgI[v] = fPgI[k.name] = k; });Object.setPrototypeOf(fPgI, PluginArray.prototype);Object.defineProperty(window.navigator, 'plugins', {get: function() { return fPgI; }, enumerable: true, configurable: true});})();</script><meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogDelCafe</title>
+
+    <link rel="prefetch" href="/nosotros.html" as="document">
+
+    <link rel="preload" href="/css/normalize.css" as="stye">
+    <link rel="normalize" href="/css/normalize.css">
+
+    <link rel="preload" href="/css/styles.css" as="style">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" crossorigin="crossorigin" as="font">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" crossorigin="crossorigin" as="font">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="encabezado  ">
+        <div class="barra">
+            <a class="encabezado__titulo" href="/index.html">
+                <h1 class="encabezado__titulo">Blog<span class="encabezado__titulo-bold">DeCafé</span></h1>
+            </a>
+            <nav class="navegacion">
+                <a href="/nosotros.html">Nosotros</a>
+                <a href="/cursos.html">Cursos</a>
+                <a href="/contacto.html">Contacto</a>
+            </nav>
+        </div>
+        <header class="contenedor header__subtitulos">
+            <h2>Blog de café con consejos y cursos</h2>
+            <h3 class="header__subtitulos-h3">Aprende de los expertos con las mejores recetas y consejos</h2>
+        </header>
+    </div>
+    <div class="columnas">
+        <main>
+            <h2>Nuestro Blog</h2>
+            <article>
+                <div class="articulo">
+                    <picture>
+                        <source loading="lazy" srcset="/blogdecafe_inicio/img/blog1.webp" type="image/webp">
+                        <img loading=lazy src="/blogdecafe_inicio/img/blog1.jpg" alt="Tipos de grano de cafe">
+                    </picture>
+                    <h3>Tipos de grano de café</h3>
+                    <p>Maecenas imperdiet venenatis nunc. Phasellus dignissim scelerisque risus vel dictum. Aliquam porttitor sem nec est faucibus, vel tincidunt justo egestas. Phasellus at turpis eleifend, lacinia purus nec, bibendum justo. Proin a hendrerit
+                        diam, sit amet eleifend erat. Etiam at vulputate dolor, sed suscipit elit. Praesent imperdiet finibus placerat.</p>
+                    <a class="boton" href="/entrada.html">Leer entrada</a>
+                </div>
+                <div>
+                    <picture>
+                        <source loading="lazy" srcset="/blogdecafe_inicio/img/blog2.webp" type="image/webp">
+                        <img loading=lazy src="/blogdecafe_inicio/img/blog2.jpg" alt="Deliciosas recetas de café">
+                    </picture>
+                    <h3>Tres deliciosas recetas de café</h3>
+                    <p>Nulla aliquam leo ut felis pellentesque consequat non hendrerit justo. Pellentesque nec egestas ex. Vivamus fermentum fermentum mi, sit amet lacinia leo. Nam commodo ante et tincidunt placerat. Etiam sit amet tincidunt turpis. Morbi
+                        placerat, tortor in scelerisque volutpat, metus quam pellentesque massa, eu commodo est leo at metus. Nunc et convallis dolor.
+                    </p>
+                    <a class="boton" href="/entrada.html">Leer entrada</a>
+                </div>
+                <div>
+                    <picture>
+                        <source loading="lazy" srcset="/blogdecafe_inicio/img/blog3.webp" type="image/webpage">
+                        <img loading=lazy src="/blogdecafe_inicio/img/blog3.jpg" alt="Beneficios del café">
+                    </picture>
+                    <h3>Beneficios del café</h3>
+                    <p>Maecenas sed euismod nulla, nec vehicula magna. Suspendisse eget neque quis purus euismod viverra sit amet quis enim. Pellentesque sit amet ligula eget dolor vehicula lacinia. Proin ultrices tempus odio vel gravida. Quisque pharetra
+                        lacinia gna, vel consequat quam varius a. Pellentesque non tortor ut ipsum vulputate blandit non id ex. Quisque dignissim dapibus nibh non tempus. In in lacinia nisi.</p>
+                    <a class="boton" href="/entrada.html">Leer entrada</a>
+                </div>
+            </article>
+        </main>
+        <aside>
+            <h2>Nuestros cursos y talleres</h2>
+            <ul class="cursos no-padding ">
+                <li>
+                    <h3>Técnicas de extracción de Café</h3>
+                    <p> <span class="precio-cursos">Precio:</span> gratis</p>
+                    <p>Cupo: 20</p>
+                    <a class="boton boton-aside" href="/entrada.html">Más informacion sobre nuestros cursos</a>
+                </li>
+                <li>
+                    <h3>4 recetas de cafe para prinicpiantes</h3>
+                    <p> <span class="precio-cursos">Precio:</span> gratis</p>
+                    <p>Cupo: 20</p>
+                    <a class="boton boton-aside" href="/entrada.html">Más informacion sobre nuestros cursos</a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+    <footer class="footer__barra">
+        <h2 class="titulo-footer">Blog De Café</h2>
+        <nav class="navegacion">
+            <a href="/nosotros.html">Nosotros</a>
+            <a href="/cursos.html">Cursos</a>
+            <a href="/contacto.html">Contacto</a>
+        </nav>
+    </footer>
+    <script src="/js/modernizr.js"></script>
+</body>
+
+</html>
